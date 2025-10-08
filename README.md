@@ -4,23 +4,38 @@
 </picture>
 
 <h1 align='center'>Putting the "You" in CPU</h1>
-<p align='center'>A technical explainer of how your computer runs programs, from start to finish.</p>
+<p align='center'>Kompyuteringiz dasturlari qanday ishga tushushini boshidan oxirigacha bo‘lgan jarayoni qamrab oluvchi texnik qo'llanma.</p>
 <p align='center'>by <a href='https://github.com/kognise'>@kognise</a> and <a href='https://github.com/hackclub'>@hackclub</a></p>
 <br>
 
-## From the beginning...
+## Boshidan boshlab...
 
-I've done [a lot of things with computers](https://github.com/kognise), but I've always had a gap in my knowledge: what exactly happens when you run a program on your computer? I thought about this gap — I had most of the requisite low-level knowledge, but I was struggling to piece everything together. Are programs really executing directly on the CPU, or is something else going on? I've used syscalls, but how do they *work*? What are they, really? How do multiple programs run at the same time?
+Men [kompyuterlar bilan ko‘p ishlar qilganman](https://github.com/kognise),
+lekin har doim bilimlarimda bo‘shliq bo‘lgan: dasturni kompyuteringizda ishga
+tushirganingizda aynan nima sodir bo‘ladi? Men bu bo‘shliq haqida o‘yladim - menda
+kerakli quyi darajadagi bilimlarning aksariyati bor edi, lekin men hamma narsani
+birlashtirishga qiynaldim. Dasturlar haqiqatan ham to‘g‘ridan-to‘g‘ri markaziy
+protsessorda ishlayaptimi yoki boshqa narsa sodir bo‘lyaptimi? Men “syscalllardan”
+foydalanganman, lekin ular qanday ishlaydi? Ular aslida nima? Bir vaqtning o‘zida
+bir nechta dastur qanday ishlaydi?
 
 <img src='/public/images/writing-this-article.png' alt='A scrawled digital drawing. Someone with long hair is confused as they peer down at a computer ingesting binary. Suddenly, they have an idea! They start researching on a desktop computer with bad posture.' width='700' />
 
-I cracked and started figuring as much out as possible. There aren't many comprehensive systems resources if you aren't going to college, so I had to sift through tons of different sources of varying quality and sometimes conflicting information. A couple weeks of research and almost 40 pages of notes later, I think I have a much better idea of how computers work from startup to program execution. I would've killed for one solid article explaining what I learned, so I'm writing the article that I wished I had.
+Men chidolmay, iloji boricha ko‘proq narsani tushunishga harakat qila boshladim.
+Agar siz kollejga bormayotgan bo‘lsangiz, tizimli va keng qamrovli resurslar ko‘p emas,
+shuning uchun men turli sifatdagi va ba’zan bir-biriga zid ma’lumotlarni o‘z ichiga olgan
+ko‘plab manbalarni saralab chiqishimga to‘g‘ri keldi. Bir necha haftalik tadqiqotlar va
+deyarli 40 sahifalik qaydlardan so‘ng, menimcha, kompyuterlarning ishga tushirilishidan
+to dastur bajarilishigacha qanday ishlashi haqida ancha yaxshi tasavvurga ega bo'ldim.
+O‘rganganlarimni tushuntiradigan bitta maqola uchun jonimni jabborga bergan bo‘lardim,
+shuning uchun o‘zim xohlagan maqolani yozyapman.
 
-And you know what they say... you only truly understand something if you can explain it to someone else.
+Bilasanmi, odamlar nima deyishadi... biror narsani boshqalarga tushuntirib bera olsanggina, uni chindan
+ham tushungan bo‘lasan.
 
-> In a hurry? Feel like you know this stuff already?
+> Shoshilyapsizmi? Bu narsani allaqachon biladigandek his qilyapsizmi?
 >
-> [Read chapter 3](https://cpu.land/how-to-run-a-program) and I guarantee you will learn something new. Unless you're like, Linus Torvalds himself.
+> [3-bobni o‘qib chiqing](https://cpu.land/how-to-run-a-program) va men kafolat beramanki, siz yangi narsalarni o‘rganasiz. Agar siz Linus Torvaldsning o‘zi bo‘lmasangiz..
 
 <br>
 
