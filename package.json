@@ -1,0 +1,24 @@
+{
+	"name": "putting-the-you-in-cpu",
+	"version": "0.0.1",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
+	},
+	"devDependencies": {
+		"@astrojs/mdx": "^0.18.4",
+		"@astrojs/sitemap": "^1.4.0",
+		"@astrojs/vercel": "^3.8.2",
+		"@types/jsdom": "^21.1.7",
+		"astro": "^2.10.15",
+		"jsdom": "^22.1.0",
+		"postcss-nesting": "^11.3.0",
+		"puppeteer": "^21.11.0",
+		"rehype-external-links": "^2.1.0",
+		"rehype-preset-minify": "^6.0.0",
+		"shiki": "^0.14.7"
+	}
+}
